@@ -11,6 +11,7 @@ LOCAL_BLOCKCHAIN_ENVIRONMENTS = [
 
 
 def get_account(index=None, id=None):
+    print(network.show_active())
     if index:
         return accounts[index]
     if id:
